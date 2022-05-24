@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    margin: 0px 70px;
+}
+
+#searchLogin {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+}
+
+#logo {
+    width: 128px;
+    height: 28px;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
