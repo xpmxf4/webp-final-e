@@ -1,3 +1,13 @@
+a {
+    display: inline-block;
+    color: #666d75;
+    text-decoration: none;
+    outline: none;
+} 
+a:active, a:visited {
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -31,8 +41,7 @@ header {
     font-size : 15px;
     font-weight: 500;
     text-align : left;
-    border-radius: 0;
-
+    border-radius: 4px;
 }
 
 #login {
@@ -40,6 +49,31 @@ header {
     justify-content: space-between;
 }
 
-#login span {
-    margin-right: 10px;
+#signup {
+    border: 1px solid #a7d4f9;
+}
+
+#signup div{
+    color: #2B96D6; 
+}
+
+#login a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: #666d75;
+}
+#login a:hover {
+    background-color: #F5F6F7;
+}
+
+#login #signup:hover {
+    background-color: #ffffff;
 }
