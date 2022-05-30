@@ -1,3 +1,7 @@
+header {
+    margin: 0px 190px;
+}
+
 a {
     display: inline-block;
     color: #666d75;
@@ -8,12 +12,11 @@ a:active, a:visited {
     text-decoration: none;
 }
 
-header {
+#first_header_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 72px;
-    margin: 0px 70px;
 }
 
 #searchLogin {
@@ -42,7 +45,13 @@ header {
     font-weight: 500;
     text-align : left;
     border-radius: 4px;
+    background-image: url(./images/ic_search.svg);
+    background-repeat:no-repeat;
+    top : 10px;
+    left : 10px;
 }
+
+
 
 #login {
     display: flex;
@@ -55,6 +64,10 @@ header {
 
 #signup div{
     color: #2B96D6; 
+}
+
+#login #signup:hover {
+    background-color: #F5FBFF;
 }
 
 #login a {
@@ -74,6 +87,3 @@ header {
     background-color: #F5F6F7;
 }
 
-#login #signup:hover {
-    background-color: #ffffff;
-}
