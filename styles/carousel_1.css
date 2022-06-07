@@ -1,33 +1,83 @@
 .carousel_1_container {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
   
 .slider {
   width: 100%;
-  max-width: 800px;
   height: 350px;
+  max-width: 100%;
   position: relative;
-  overflow: hidden; /* <===  */
+  overflow: hidden;
   border-radius: 15px;
 }
 
 .slide {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 800px;
+  width: 101%;
   height: 350px;
   position: absolute;
   transition: all 0.5s;
 }
 
-.slide img {
-  width: 25%;
+.slide .main_city_card {
+  width: 100%;
+  height: 333px;
+}
+
+.card_content{
+  width: 100%;
+  max-width: 78%;
   height: 100%;
-  object-fit: cover;
+  padding: 32px 24px;
+  border-radius: 5px;
+  object-fit:scale-down
+}
+
+.card_content_header {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  line-height: 1.29;
+  text-align: left;
+  text-shadow: 0 1px 8px rgb(33 37 41 / 60%);
+  vertical-align: middle;
+}
+.card_content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -.3px;
+  line-height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 8px rgb(33 37 41 / 60%);
+}
+.card_content a {
+  display: flex;
+  align-items: center;
+  border: none;
+  border: 1px solid #ced4da;
+  box-shadow: 0 0 0 1px rgb(33 37 41 / 8%);
+  background-color: #fff;
+  color: #495056;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 50px;
+  height: 40px;
+  margin-top: 84%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .btn {

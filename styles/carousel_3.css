@@ -1,0 +1,80 @@
+.carousel_3_container {
+    margin-top: 80px;
+}
+    
+.slider_3 {
+    width: 100%;
+    height: 350px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+  
+.slide_3 {
+    display: flex;
+    justify-content: space-between;
+    width: 101%;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+  
+.slide_3 .main_city_card_3 {
+    width: 100%;
+    height: 311px;
+    margin-right: 20px;
+}
+  
+.main_city_card_3 img {
+      width: 100%;
+      height: 166px;
+}
+
+.text_container {
+    background-color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 10px 16px 16px;
+    position: relative;
+}
+
+.product_type {
+    color: #848c94;
+    font-size: 12px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.text_container h3 {
+    font-size: 15px;
+    line-height: 1.47;
+    color: #343a40;
+    font-weight: 600;
+    width: 100%;
+}
+  
+.btn_3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 14px;
+  }
+.btn_3:active {
+    transform: scale(1.1);
+}
+.btn-prev_3 {
+    top: 45%;
+    left: 2%;
+}
+  
+.btn-next_3 {
+    top: 45%;
+    right: 2%;
+}
