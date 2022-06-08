@@ -25,9 +25,15 @@
   transition: all 0.5s;
 }
 
-.slide .main_city_card {
+.main_city_card {
   width: 100%;
   height: 333px;
+  transition: 0.5s all;
+}
+
+.card_content:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 5px 0px rgba(0,8,8,0.31);
 }
 
 .card_content{
