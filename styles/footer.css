@@ -1,0 +1,23 @@
+footer {
+    display:flex;
+    /* justify-content: space-between; */
+    border-top: 0.5px solid #ced4da;
+    margin-top : 70px;
+    padding : 80px 20% 0 20%;
+}
+
+.developer_list {
+    margin-left: 200px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(102, 109, 117);
+}
+
+footer p {
+    margin-bottom: 30px;
+    color: #848c94;
+}
