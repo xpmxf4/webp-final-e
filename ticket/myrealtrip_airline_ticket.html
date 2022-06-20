@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>현지 여행의 모든 것 :: 마이리얼트립</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- 돋보기 그림 불러오기 -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        
+        <!-- bxslider jquery -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+        <!-- title logo 생성 -->
+        <link href="media/title_logo.jfif" rel="shortcut icon" type="image/x-icon">
+
+        <!-- 왼쪽 오른쪽 화살표 그림 불러오기 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+        <script>
+            $(function(){
+                var mySlider = $(".slider").bxSlider({
+                    auto: true,
+                    speed: 600,
+                    controls: false,
+                })
+
+                // 이전 슬라이드 이동
+                $("#prevBtn").on("click", function(){
+                    mySlider.goToPrevSlide();
+                    return false;
+                });
+
+                // 다음 슬라이드 이동
+                $("#nextBtn").on("click", function(){
+                    mySlider.goToNextSlide();
+                    return false;
+                });
+            });
+        </script>
+
+        <!-- overwrite해서 bx-wrapper css속성 입히기 -->
+        <style>
+            .bx-wrapper {border:0; background:#fbfbfb; box-shadow:none;}
+        </style>
+    </head>
+
+    <body>
+        <!-- 상단 배경이미지에 포함되는 부분 -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="navbar">
+                        <a href="/index.html"><img id="logo" src="media/myrealtrip.png" alt="logo"></a>
+
+                    <!-- 검색창 -->
+                    <div class="search-box">
+                        <input type="text" class="search-txt" name=""placeholder="  도시나 상품을 검색해보세요">
+                        <a class="search-btn" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+
+                    <ul id="menu">
+                        <li><a href="#">파트너 등록하기</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li id="join"><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+
+                <div class="mini-nav">
+                    <ul id="mini-menu">
+                        <li><a href="/index.html">홈</a></li>
+                        <li><a href="#" id="current-page">항공권</a></li>
+                        <li><a href="#">투어&티켓</a></li>
+                        <li><a href="#">국내숙소</a></li>
+                        <li><a href="/vacation/page.html">호캉스</a></li>
+                        <li><a href="#">렌터카</a></li>
+                        <li><a href="#">패키지</a></li>
+                        <li><a href="#">한인민박</a></li>
+                        <li><a href="#">해외호텔</a></li>
+                        <li><a href="#">할인혜택</a></li>
+                        <li><a href="#">키즈</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="wrapper">
+                <div class="ticket-menu">
+                    <ul id="way">
+                        <li><a href="#" id="shuttle">왕복</a></li>
+                        <li><a href="#">편도</a></li>
+                        <li><a href="#">다구간</a></li>
+                    </ul>
+                
+                    <ul id="reservation">
+                        <li><a href="#">비회원 예약내역</a></li>
+                        <li><a href="#">항공권 예약내역</a></li>
+                    </ul>
+                </div>
+
+                <!-- 예매창 -->
+                <div class="input">
+                    <div class="country">
+                        <input id="start" placeholder="서울(SEL)" type="text" readonly="readonly">
+                        <button type="button" id="btn">switch</button>
+                        <input id="arrive" placeholder="도착지가 어디인가요?" type="text" readonly="readonly">
+                    </div>    
+
+                    <div class="cal">
+                        <input id="day" placeholder="가는 날 선택  -  오는 날 선택" type="text" readonly="readonly">
+                    </div>
+                    
+                    <input id="people" placeholder="승객 1명, 일반석" type="text" readonly="readonly">
+
+                    <a href="#" id="search-btn" title="검색">검색</a>
+                </div>
+
+                <!-- 예매창 밑 체크박스 -->
+                <div class="check">
+                    <label><input type="checkbox" name="option" value="direct" class="cb"> 직항만</label>
+                    <label><input type="checkbox" name="option" value="free-baggage" class="cb"> 무료 수하물 가능</label>
+                </div>
+
+                <div class="info">
+                    <a href="#">출발/도착 다른 구간</a>
+                </div>
+            
+            </div>
+        </div>
+
+        <!-- 추천해주는 부분 -->
+        <div class="main">
+            <div class="wrapper">
+                <!-- 이미지 슬라이드 -->
+                <div class="box">
+                    <div class="slider">
+                        <div><a href="#"><img src="media/slide1.PNG" alt="slide1" id="left"><img src="media/slide2.PNG" id="right" alt="slide2"></a></div>
+                        <div><a href="#"><img src="media/slide4.png" alt="slide4" id="left"><img src="media/slide5.jpg" id="right" alt="slide5"></a></div>
+                        <div><a href="#"><img src="media/slide3.png" alt="slide3" id="left"><img src="media/slide1.PNG" id="right" alt="slide1"></a></div>
+                    </div>
+
+                    <div class="left">
+                        <a href="#" id="prevBtn"><i class="xi-angle-left-thin xi-3x"></i></a>
+                    </div>
+                    
+                    <div class="right">
+                        <a href="#" id="nextBtn"><i class="xi-angle-right-thin xi-3x"></i></a>
+                    </div>
+                </div>
+
+                <div class="recommend">
+                    <h2>격리 면제 📢 이제 떠나요 🪂</h2>
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend1-1.PNG" alt="recommend1-1" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 괌</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 괌<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>557,100~ <span id="blue-text">백신접종시 격리해제</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend1-2.PNG" alt="recommend1-2" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 사이판</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 사이판<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>489,400~ <span id="blue-text">트래블 버블</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend1-3.PNG" alt="recommend1-3"width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 런던</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 런던<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>557,100~ <span id="blue-text">격리없이 입국가능</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend1-4.PNG" alt="recommend1-4" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 프랑크푸르트</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 프랑크푸르트<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>557,100~ <span id="blue-text">백신접종시 격리해제</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="recommend">
+                    <h2>🌸 제주 꽃구경 떠나요🌸</h2>
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend2-1.PNG" alt="recommend2-1" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 제주</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 제주<br>
+                                5월 24일 - 5월 24일</p>
+                                <h5>32,300~ <span id="blue-text">5월 출발</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend2-2.PNG" alt="recommend2-2" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>제주 &rarr; 서울</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 제주 &rarr; 서울<br>
+                                5월 26일 - 5월 26일</p>
+                                <h5>35,200~ <span id="blue-text">5월 출발</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend2-3.PNG" alt="recommend2-3" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 제주</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 제주<br>
+                                6월 14일 - 6월 14일</p>
+                                <h5>30,200~ <span id="blue-text">6월 출발</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend2-4.PNG" alt="recommend2-4" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>제주 &rarr; 서울</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 제주 &rarr; 서울<br>
+                                6월 16일 - 6월 16일</p>
+                                <h5>27,800~ <span id="blue-text">6월 출발</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="recommend">
+                    <h2>허니문 떠나요💍</h2>
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend3-1.PNG" alt="recommend3-1" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 하와이</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 하와이<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>1,040,500~ <span id="blue-text">경유</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend3-2.PNG" alt="recommend3-2" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 말레(몰디브)</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 말레(몰디브)<br>
+                                    1월 1일 - 12월 31일</p>
+                                <h5>928,000~ <span id="blue-text">경유</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend3-3.PNG" alt="recommend3-3" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 발리</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 발리<br>
+                                9월 1일 - 12월 31일</p>
+                                <h5>923,900~ <span id="blue-text">경유</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend3-4.PNG" alt="recommend3-4" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 칸쿤</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 칸쿤<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>1,371,200~ <span id="blue-text">경유</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="recommend">
+                    <h2>🛩️하와이+이웃섬으로 특별한 여행 ✨</h2>
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend4-1.PNG" alt="recommend4-1" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 마우이</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 마우이<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>1,411,100~ <span id="blue-text">하와이안항공</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend4-2.PNG" alt="recommend4-2" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 코나</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 코나<br>
+                                    1월 1일 - 12월 31일</p>
+                                <h5>1,411,100~ <span id="blue-text">경유</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend4-3.PNG" alt="recommend4-3" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 힐로</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 힐로<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>1,411,100~ <span id="blue-text">하와이안항공</span></h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product">
+                        <a href="#">
+                            <img src="media/recommend4-4.PNG" alt="recommend4-4" width="250px" height="150px">
+                            <div class="explain">
+                                <h4>서울 &rarr; 리후에</h4>
+                                <p><img src="media/airplane.png" alt="airplane-logo" width="20px" height="20px"> 서울 &rarr; 리후에<br>
+                                1월 1일 - 12월 31일</p>
+                                <h5>1,411,100~ <span id="blue-text">하와이안항공</span></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 공지사항 -->
+                <div class="notice">
+                    <h2>항공권 공지사항<span id="more"><a href="#">더보기&gt;</a></span></h2>
+                    <hr>
+                    <ul>
+                        <li><a href="#">[공지] 2022년 6월 1일 부 유류할증료 인상 예정 안내<span id="date">2022-05-27</span></a></li>
+                        <hr>
+                        <li><a href="#">[공지] 티웨이항공(TW) 비지니스 좌석 판매 안내<span id="date">2022-03-24</span></a></li>
+                        <hr>
+                        <li><a href="#">[공지] 거리두기 격상에 따른 국내서 항공권 환불 요청 방법<span id="date">2022-02-18</span></a></li>
+                        <hr>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- footer -->
+            <div class="wrapper">
+                <div class="footer">
+                    <img src="media/knu.png" alt="knu-logo" width="500">
+                </div>
+
+                <div class="team">
+                    <h4>소개</h4>
+
+                    <ul>
+                        <li id="fir">윤서진 <sapn class="role"> - 호캉스 특가</sapn></li>
+                        <li id="sec">박채훈 <sapn class="role"> - 메인 페이지</li>
+                        <li id="thi">이민선 <sapn class="role"> - 항공권</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 프로젝트 참조 페이지
+            https://pcnjcwj.tistory.com/7
+            https://www.toptal.com/designers/htmlarrows/
+            https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=roropoly1&logNo=221115192727
+        -->
+    </body>
+</html>

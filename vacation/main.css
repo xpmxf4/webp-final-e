@@ -1,0 +1,290 @@
+main{
+    margin-top: 40px;
+    width: 1060px;
+    display: flex;
+    flex-direction: column;
+}
+
+.maintop{
+    width: 1060px;
+}
+
+.mainmiddle{
+    position: relative;
+    width: 1060px;
+    margin: 0px auto;
+    z-index: 1;
+}
+
+
+.movetop-button{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
+
+.movetop-button img{
+    height: 40px;
+    width: 40px;
+}
+
+.nowevent{
+    padding: 3px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 13px;
+    border-color: #94e7d1;
+    background-color: #e6f8f3;
+    color: #33b893;
+}
+
+.main-1 img{
+    width: inherit;
+    height: 313px;
+    padding-bottom: 20px;
+}
+
+.main-2 img{
+    width: inherit;
+    height: 493px;
+    padding-bottom: 20px;
+}
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+}
+
+.container{
+    position: relative;
+}
+
+ul.tabs li:hover{
+    border-bottom: 3px solid #51abf3;
+}
+
+ul.tabs li{
+    margin-left: 0px;
+    background: none;
+    color: #495056;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+  
+ul.tabs li.current{
+    color: #222;
+    border-bottom: 3px solid #51abf3;
+}
+  
+.popup-box{
+    left: 0;
+    top: 0;
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    border:none;
+    border-radius: 4px;
+    background-color: white;
+    z-index: 9999;
+}
+
+.popup-box img{
+    width: 100%;
+    height: 250px;
+}
+
+.pop-shadow{
+    display: none;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#000;
+  opacity: 0.5;; 
+  z-index: 9000;
+}
+
+.reservation-wrap{
+    text-align: center;
+}
+
+.reservation-wrap h1{
+    color: #666d75;
+}
+
+.reservation-wrap label{
+    font-size: 20px;
+    font-weight: 700;
+    color: #495056;
+}
+.reservation-wrap input{
+    font-size: 20px;
+    margin-bottom: 12px;
+    border: none;
+    background-color: #f5f6f7;
+    border-radius: 4px;
+}
+
+.reservation-wrap input{
+    font-size: 20px;
+    margin-bottom: 12px;
+    border: none;
+    background-color: #f5f6f7;
+    border-radius: 4px;
+}
+.reserv-success{
+    display: none;
+    text-align: center;
+}
+
+.reserv-success h1{
+    color:#495056;
+}
+
+#p1{
+    color:#666d75;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#p2{ 
+    color: #848c94;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.reservation-wrap button{
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    border: 1px solid #2b96ed;
+    border-radius: 3px;
+    color: #2b96ed;
+    cursor: pointer;
+    background-color: white;
+}
+
+.tab-content{
+    display: none;  
+    padding: 15px 0;
+}
+  
+.tab-content.current{
+    display: inherit;
+}
+
+.content-container{
+    height: 760px;
+    
+    padding-top: 20px;
+}
+
+.top-span{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+
+.main-3{
+    padding-bottom: 30px;
+}
+
+.main-3 img{
+    height: 85px;
+}
+
+.main-4-1 img{
+    height: 84px;
+}
+.main-4-1{
+    padding-bottom: 20px;
+}
+
+
+.main-4-2 img{
+    height: 98px;
+}
+
+
+.main-5{
+    padding-bottom: 30px;
+}
+.main-5 img{
+    height: 543px;
+}
+
+.contents-wrap{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 233px;
+    height: 310px;
+    border:1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.contents-wrap:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.tab-contents-top{
+    display: flex;
+    padding-top: 20px;
+}
+
+.tab-contents-low{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.content-img{
+    width: 232.5px;
+    height: 166px;
+}
+
+.contents-info{
+    width: 248px;
+    height: 143px;
+}
+
+.ticket-city{
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #848c94;
+}
+
+.hotel-name{
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content-info-low{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.content-info-low-price{
+    font-size: 14px;
+    font-weight: 500;
+    color: #666d75;
+}
+
+

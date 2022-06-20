@@ -2,7 +2,8 @@ footer {
     display:flex;
     /* justify-content: space-between; */
     border-top: 0.5px solid #ced4da;
-    margin-top : 70px;
+    margin-top : 40px;
+    margin-bottom: 40px;
     padding : 80px 20% 0 20%;
 }
 
