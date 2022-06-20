@@ -47,7 +47,7 @@ a:active, a:visited {
     font-weight: 500;
     text-align : left;
     border-radius: 4px;
-    background-image: url(./images/ic_search.svg);
+    background-image: url(../images/ic_search.svg);
     background-repeat:no-repeat;
     background-position: 10px;
     
