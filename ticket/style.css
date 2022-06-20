@@ -13,7 +13,7 @@
 }
 
 .wrapper {
-    width: 65%;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -331,6 +331,8 @@ input:focus {
 .box {
     margin-top: 70px;
     margin-bottom: 140px;
+    display: flex;
+    flex-direction: row;
 }
 
 .box a {
@@ -352,19 +354,24 @@ input:focus {
 
 /* 화살표 위치 css */
 .bx-wrapper {
-    position: relative;
+    display: inline-block;
+    width: 1200px;
 }
 
 .left {
-    position: absolute;
-    top: 60%;
-    left: 14%;
+    margin-top: 50px;
+    display: inline-block;
+    flex: 1;
+    width: 48px;
+    margin-right: 30px;
 }
 
 .right {
-    position: absolute;
-    top: 60%;
-    right: 14%;
+    margin-top: 50px;
+    display: inline-block;
+    width: 48px;
+    flex: 1;
+    margin-left: 30px;
 }
 /* 여기까지 */
 
