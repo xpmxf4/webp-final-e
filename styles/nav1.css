@@ -67,6 +67,7 @@ a:active, a:visited {
 #login {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 #signup {
@@ -78,6 +79,7 @@ a:active, a:visited {
 }
 
 #login #signup:hover {
+    position: relative;
     background-color: #F5FBFF;
 }
 
@@ -93,8 +95,93 @@ a:active, a:visited {
     padding-left: 32px;
     padding-right: 32px;
     color: #666d75;
+    user-select: none;
+    cursor: pointer;
 }
 #login a:hover {
     background-color: #F5F6F7;
 }
 
+/* 로그인이 되었을 시 */
+
+#login img {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: border-color 0.2s ease 0s;
+    overflow: hidden;
+    appearance: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+#login img:hover {
+    border-color: rgb(233, 236, 239);
+    display: inline-block;
+}
+
+#profile_popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 30000;
+    width: 230px;
+    border: 1px solid rgb(233, 236, 239);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 1px 0px;
+    border-radius: 1px;
+    z-index: 1;
+}
+
+.popup_rows {
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(233, 236, 239);
+}
+
+.popup_rows p {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin: 0px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+}
+
+#popup_first_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18px 16px;
+}
+
+#popup_first_row .name {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(73, 80, 86);
+    line-height: 25px;
+    margin-bottom: 4px;
+    user-select:none;
+    cursor: pointer;
+}
+
+#popup_first_row .profile_manage {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(43, 150, 237);
+    line-height: 21px;
+    transition: color 0.2s ease 0s;
+    user-select:none;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login_content {
+    width: 430px;
+    margin-top: 64px;
+    border: 1px solid #e9ecef;
+    border-radius: 2px;
+    padding: 0 48px;
+    text-align: center;
+}
+
+.login_content img {
+    width: 60px;
+    height: 60px;
+    margin-top: 56px;
+}
+
+.login_content .title {
+    margin-top: 26px;
+    color: #343a40;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -.47px;
+    line-height: 1.29;
+}
+
+.login_content .subtitle {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #666d75;
+    letter-spacing: -.27px;
+    line-height: normal;
+}
+
+.login_content #kakao_login_button {
+    margin-bottom: 30px;
+}
+
+.login_content #kakao_login_button img {
+    width: 100%;
+}
+
+.sns {
+    color: #666d75;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.25px;
+    line-height: normal;
+    user-select: none;
+}
+
+.border{
+    border-color: #d8d8d8;
+    border-style: solid;
+    border-width: 0 0.5px;
+    height: 16px;
+    margin-left: 18px;
+    margin-right: 16px;
+}
+
+.ask_signup {
+    margin-top : 40px;
+    margin-bottom : 40px;
+    user-select: none;
+}
